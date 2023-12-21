@@ -44,8 +44,9 @@ To customize the BitSpecter Base Theme, it is recommended to create a child them
 4. Ceate a functions.php File: Create a functions.php file in your child theme directory. Add the following code to enqueue the parent and child theme stylesheets:
     ```php
     add_action( 'wp_enqueue_scripts', function() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style', get_stylesheet_uri(), array('parent-style') );
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'child-style', get_stylesheet_uri(), array('parent-style') );
+    });
     ```
 
 5. Activate Your Child Theme: Go back to Appearance > Themes in your WordPress dashboard and activate your new child theme.
