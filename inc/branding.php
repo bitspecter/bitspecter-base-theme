@@ -59,7 +59,7 @@ function bitspecter_login_logo()
     $custom_logo_id = get_theme_mod('custom_logo');
     $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
 
-    $logoSrc = $logo ? $logo[0] : get_stylesheet_directory_uri() . '/resources/images/logo.png';
+    $logoSrc = $logo ? $logo[0] : get_template_directory_uri() . '/resources/images/logo.png';
 
     echo '<style type="text/css">
         #wpml-login-ls-form, #backtoblog { display: none !important; }
@@ -70,7 +70,7 @@ function bitspecter_login_logo()
 add_action('login_head', __NAMESPACE__ . '\\bitspecter_login_logo');
 
 function custom_login_stylesheet() {
-    wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/css/login.css');
+    wp_enqueue_style('custom-login', get_template_directory_uri() . '/css/login.css');
 }
 add_action('login_enqueue_scripts', __NAMESPACE__ . '\\custom_login_stylesheet');
 
