@@ -6,7 +6,7 @@ function menu_item_classes($item_id, $item) {
     <div style="clear: both;">
     <span class="description"><?= __("CSS Classes", 'bitspecter'); ?></span><br />
     <input type="hidden" class="nav-menu-id" value="<?= $item_id; ?>" />
-        <input type="text" name="menu_item_classes[<?= $item_id; ?>]" id="menu-item-classes-<?= $item_id; ?>" value="<?= esc_attr($menu_item_classyes); ?>" style="width: 100%;" />
+        <input type="text" name="menu_item_classes[<?= $item_id; ?>]" id="menu-item-classes-<?= $item_id; ?>" value="<?= esc_attr($menu_item_classes); ?>" style="width: 100%;" />
 </div>
 <?php }
 
