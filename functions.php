@@ -3,6 +3,7 @@
 include_once(get_template_directory() . '/inc/branding.php');
 include_once(get_template_directory() . '/inc/hardening.php');
 include_once(get_template_directory() . '/inc/performance.php');
+include_once(get_template_directory() . '/inc/dashboard.php');
 
 function bitspecter_setup()
 {
