@@ -10,7 +10,6 @@
       "App\\": "app/"
     }
   },
-
   "require": {
     "php": "^8.0",
     "roots/acorn": "^3.3"
