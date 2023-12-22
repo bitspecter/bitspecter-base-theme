@@ -65,3 +65,9 @@ function bitspecter_login_logo()
     </style>';
 }
 add_action('login_head', __NAMESPACE__ . '\\bitspecter_login_logo');
+
+
+function custom_admin_footer_text() {
+    return 'Powered by <a href="https://bitspecter.com" target="_blank">BitSpecter</a>';
+}
+add_filter('admin_footer_text', __NAMESPACE__ . '\\custom_admin_footer_text');

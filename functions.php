@@ -1,9 +1,17 @@
 <?php
 
-include_once(get_template_directory() . '/inc/branding.php');
-include_once(get_template_directory() . '/inc/hardening.php');
-include_once(get_template_directory() . '/inc/performance.php');
-include_once(get_template_directory() . '/inc/dashboard.php');
+$includes = [
+    'branding',
+    'hardening',
+    'performance',
+    'dashboard',
+    'acf',
+    'settings',
+];
+
+foreach ($includes as $file) {
+    include_once get_template_directory() . '/inc/' . $file . '.php';
+}
 
 function bitspecter_setup()
 {
@@ -45,6 +53,7 @@ function bitspecter_setup()
 }
 
 add_action('after_setup_theme', 'bitspecter_setup');
+
 add_filter('auto_plugin_update_send_email', fn () => false);
 add_filter('auto_theme_update_send_email', fn () => false);
 

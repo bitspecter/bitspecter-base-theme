@@ -15,8 +15,7 @@ Welcome to the BitSpecter Base Theme, a robust and adaptable foundation for your
 1. Download the BitSpecter Base Theme files from the repository.
 2. In your WordPress dashboard, go to `Appearance > Themes`.
 3. Click `Add New` and upload the downloaded BitSpecter Base Theme file.
-4. Create a child theme
-
+4. Create a child theme (optional)
 
 # Theme Structure
 

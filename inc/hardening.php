@@ -14,7 +14,6 @@ function define_constants()
 {
     defined('FORCE_SSL_ADMIN') || define('FORCE_SSL_ADMIN', true);
     defined('DISALLOW_FILE_EDIT') || define('DISALLOW_FILE_EDIT', true);
-    defined('DISALLOW_FILE_MODS') || define('DISALLOW_FILE_MODS', true);
 }
 
 /**
@@ -103,3 +102,10 @@ function add_security_headers()
     header("Content-Security-Policy: upgrade-insecure-requests;");
     header('Strict-Transport-Security: "max-age=31536000" env=HTTPS');
 }
+
+function custom_mime_types( $mime_types ) {
+    $mime_types['svg'] = 'image/svg+xml';
+    return $mime_types;
+}
+
+add_filter( 'upload_mimes', __NAMESPACE__ . '\\custom_mime_types' );
