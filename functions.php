@@ -36,6 +36,11 @@ function bitspecter_setup()
         'caption',
     ));
 
+    register_nav_menus(array(
+        'primary_navigation' => __('Primary Navigation', 'bitspecter'),
+        'footer_navigation'  => __('Footer Navigation', 'bitspecter'),
+    ));
+
     do_action('bitspecter_after_setup');
 }
 
@@ -106,3 +111,4 @@ collect(['setup', 'filters'])
             );
         }
     });
+

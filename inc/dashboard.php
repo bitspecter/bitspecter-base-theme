@@ -22,3 +22,4 @@ if (isset($_POST['menu_item_classes'][$menu_item_db_id]) && current_user_can('ed
 }
 
 add_action('wp_update_nav_menu_item', 'save_menu_item_classes', 10, 2);
+
