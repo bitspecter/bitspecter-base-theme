@@ -1,0 +1,46 @@
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+#login h1 {
+    height: auto;
+    display: block;
+}
+
+#login form {
+    border-radius: 10px;
+}
+
+.wp-core-ui .button-primary {
+    padding: 0 32px !important;
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #060606;
+    border-color: #060606;
+}
+
+.wp-login-lost-password {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#backtoblog {
+    display: none;
+}
+
+.login form .input, .login input[type=password], .login input[type=text] {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
